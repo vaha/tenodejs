@@ -1,0 +1,16 @@
+{
+  "flag": false,
+  "myPromises": [ 1, 2, 3 ],
+  "element": {
+    "name": "title",
+    "css": ".dd-ui"
+  },
+  "screenshot": null,
+  "elementText": "",
+  "allElementsText": "with const",
+  "counter": "12",
+  "config": "Common",
+  "const": "firsT",
+  "parameters": [ 3, "", "add", "delete", "update", "more", "--", false ],
+  "description": "my first"
+}

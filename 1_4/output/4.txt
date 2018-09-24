@@ -1,0 +1,5 @@
+Property "flag" is not a boolean: 1
+Property "screenshot" is not null: false
+Property "config" doesn't equal to "Common": not a Common
+Property "const" doesn't equal to "FiRst" (case insensitive): the first const
+Property "description" length is not lesser than 13: my first project on js
