@@ -1,0 +1,1 @@
+Create a function that will take a String value as first parameter, Number value as second and String value as third. First parameter should be a sentence or set of sentences, second parameter should be a number of letter in each word in the sentence that should be replaced by the third parameter. That function should return updated sentence.
