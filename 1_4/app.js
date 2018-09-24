@@ -39,7 +39,7 @@ function validateJson(filePath) {
         let content = errors.join("\r\n");
         fs.writeFile("./output/" + errorFileName, content, function(err) {
             if(err) {
-                return "="+err;
+                return err;
             }
         }); 
         return path.resolve(errorFileName);
