@@ -1,5 +1,7 @@
-let fs = require("fs");
-let path = require("path");
+const fs = require("fs");
+const path = require("path");
+const util = require('util');
+fs.readFileAsync = util.promisify(fs.readFile);
 
 let rules = {
     "flag" : function(value) { return typeof value === "boolean" ? null : "is not a boolean"; },
@@ -14,8 +16,8 @@ let rules = {
     "description" : function(value) { return typeof value === "string" ? (value.length > 5 ? (value.length < 13 ? null : "length is not lesser than 13") : "length is not greater than 5") : "is not a string"; }
 };
 
-function validateJson(filePath) {
-    let contents = fs.readFileSync(filePath);
+async function validateJson(filePath) {
+    let contents = await fs.readFileAsync(filePath);
     let json = JSON.parse(contents, 3);
     
     let errors = [];
@@ -33,23 +35,23 @@ function validateJson(filePath) {
     }
 
     if (errors.length === 0) {
-        return "OK";
+        console.log("OK");
     } else {
         const errorFileName = path.basename(filePath, ".json") + ".txt";
         let content = errors.join("\r\n");
         fs.writeFile("./output/" + errorFileName, content, function(err) {
             if(err) {
-                return err;
+                console.error(err);
             }
         }); 
-        return path.resolve(errorFileName);
+        console.log(path.resolve(errorFileName));
     }
 }
 
 
 
-console.log(validateJson("./input/1.json"));
-console.log(validateJson("./input/2.json"));
-console.log(validateJson("./input/3.json"));
-console.log(validateJson("./input/4.json"));
-console.log(validateJson("./input/valid.json"));
+validateJson("./input/1.json");
+validateJson("./input/2.json");
+validateJson("./input/3.json");
+validateJson("./input/4.json");
+validateJson("./input/valid.json");
