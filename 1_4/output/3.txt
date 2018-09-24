@@ -1,5 +1,5 @@
-Property "myPromises" is not an array: null
-Property "screenshot" is not null: some
-Property "counter" is not greater than 10: true
-Property "config" doesn't equal to "Common": the Common
-Property "const" doesn't equal to "FiRst" (case insensitive): the second const
+Property 'myPromises' is not an array: null
+Property 'screenshot' is not null: some
+Property 'counter' is not greater than 10: true
+Property 'config' doesn't equal to "Common": the Common
+Property 'const' doesn't equal to "FiRst" (case insensitive): the second const

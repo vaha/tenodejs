@@ -1,5 +1,5 @@
-Property "myPromises" is not an array: [object Object]
-Property "screenshot" is not null: 
-Property "config" doesn't equal to "Common": not a common
-Property "const" doesn't equal to "FiRst" (case insensitive): the first const
-Property "description" length is not lesser than 13: my first project on js
+Property 'myPromises' is not an array: [object Object]
+Property 'screenshot' is not null: 
+Property 'config' doesn't equal to "Common": not a common
+Property 'const' doesn't equal to "FiRst" (case insensitive): the first const
+Property 'description' length is not lesser than 13: my first project on js

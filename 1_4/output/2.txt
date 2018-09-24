@@ -1,7 +1,7 @@
-Property "flag" is not a boolean: 0
-Property "element" is not an object: title
-Property "allElementsText" doesn't contain string "const": contain the cost
-Property "config" doesn't equal to "Common": not a Common
-Property "const" doesn't equal to "FiRst" (case insensitive): the first const
-Property "parameters" doesn't contain 8 elements: 3,,add,delete,update,,false
-Property "description" length is not lesser than 13: my first project on js
+Property 'flag' is not a boolean: 0
+Property 'element' is not an object: title
+Property 'allElementsText' doesn't contain string "const": contain the cost
+Property 'config' doesn't equal to "Common": not a Common
+Property 'const' doesn't equal to "FiRst" (case insensitive): the first const
+Property 'parameters' doesn't contain 8 elements: 3,,add,delete,update,,false
+Property 'description' length is not lesser than 13: my first project on js

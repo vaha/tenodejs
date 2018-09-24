@@ -1,8 +1,8 @@
 function isPalindrome(str) {
-    let alphaNumeric = '';
+    let alphaNumeric = "";
     for (let i = 0; i < str.length; i++) {
         const c = str[i];
-        if (c.match('[a-zA-Z0-9]')) {
+        if (c.match("[a-zA-Z0-9]")) {
             alphaNumeric += c.toLowerCase();
         }   
     }
@@ -10,11 +10,11 @@ function isPalindrome(str) {
 }
 
 function testPalindrome(str) {
-    console.log(str + ': ' + isPalindrome(str));
+    console.log(str + ": " + isPalindrome(str));
 }
 
-testPalindrome('qwerty');
-testPalindrome('qwertytrewq');
-testPalindrome('qwerty - trewq');
-testPalindrome('qwErtyTrewq');
-testPalindrome('qwert1y1trewq');
+testPalindrome("qwerty");
+testPalindrome("qwertytrewq");
+testPalindrome("qwerty - trewq");
+testPalindrome("qwErtyTrewq");
+testPalindrome("qwert1y1trewq");
