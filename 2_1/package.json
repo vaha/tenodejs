@@ -1,0 +1,14 @@
+{
+  "name": "task-2_1",
+  "version": "1.0.0",
+  "description": "Take any library from npm that can save data in .xlsx format. Create a function that can convert all .json files from the given folder into 1 .xlsx file (catch all nesting). That function should take 2 parameters:\r First: path to the folder with json files;\r Second: path to folder where .xlsx file will be created.\r Example: xlsxConverter(‘./some/long/path’, ‘./another/long/path’);",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xlsx": "^0.14.0"
+  }
+}
