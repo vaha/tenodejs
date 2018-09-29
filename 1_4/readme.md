@@ -1,3 +1,4 @@
+# Task
 Create a Function that will take a path to the .json file will read it and confirm that that json is satisfied to conditions:
 "flag" - boolean	
 "myPromises" - array	
